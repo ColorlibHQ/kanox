@@ -14,10 +14,10 @@
  ***********************************/
 
  // Theme color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_theme_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Theme Color', 'kanox' ),
         'description' => esc_html__( 'Select the theme color.', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
@@ -27,10 +27,10 @@ Epsilon_Customizer::add_field(
 );
 
  // Theme color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_theme_box_shadow_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Box Color', 'kanox' ),
         'description' => esc_html__( 'Select the theme color.', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
@@ -41,10 +41,10 @@ Epsilon_Customizer::add_field(
 
  
 // Header background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_header_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Sticky Header BG Color', 'kanox' ),
         'description' => esc_html__( 'Select the header background color.', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
@@ -54,10 +54,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header nav menu color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_header_menu_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header menu color', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'kanox_header_section',
@@ -66,10 +66,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header nav menu hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_header_menu_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header menu hover color', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'kanox_header_section',
@@ -78,10 +78,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header dropdown menu color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_header_drop_menu_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu color', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'kanox_header_section',
@@ -90,10 +90,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header dropdown menu hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_header_drop_menu_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu hover color', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'kanox_header_section',
@@ -107,7 +107,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
  
 // Post excerpt length field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_excerpt_length',
     array(
         'type'        => 'text',
@@ -120,28 +120,28 @@ Epsilon_Customizer::add_field(
 );
 
 // Blog single page social share icon
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_blog_meta',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog page post meta show/hide', 'kanox' ),
         'section'     => 'kanox_blog_section',
         'default'     => true
     )
 );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_like_btn',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog Single Page Like Button show/hide', 'kanox' ),
         'section'     => 'kanox_blog_section',
         'default'     => true
     )
 );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_blog_share',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog Single Page Share show/hide', 'kanox' ),
         'section'     => 'kanox_blog_section',
         'default'     => true
@@ -154,16 +154,16 @@ Epsilon_Customizer::add_field(
  =============================================*/
 
 
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'kanox_portfolio_single_rp',
 	array(
-		'type'        => 'epsilon-toggle',
+		'type'        => 'colorlib-toggle',
 		'label'       => esc_html__( 'Project Recent Post Section show/hide', 'kanox' ),
 		'section'     => 'kanox_portfolio_section',
 		'default'     => true
 	)
 );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'portfolio_recent_post_section_title',
 	array(
 		'type'              => 'text',
@@ -173,7 +173,7 @@ Epsilon_Customizer::add_field(
 		'default'           => esc_html__('Related Project', 'kanox')
 	)
 );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'portfolio_recent_post_number',
 	array(
 		'type'              => 'number',
@@ -190,7 +190,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // 404 text #1 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_fof_titleone',
     array(
         'type'              => 'text',
@@ -201,7 +201,7 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_fof_titletwo',
     array(
         'type'              => 'text',
@@ -212,10 +212,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #1 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_fof_textone_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #1 Color', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'kanox_fof_section',
@@ -223,10 +223,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_fof_texttwo_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #2 Color', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'kanox_fof_section',
@@ -234,10 +234,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_fof_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Page Background Color', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'kanox_fof_section',
@@ -250,10 +250,10 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // Footer Widget section
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'footer_widget_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Footer Widget Section', 'kanox' ),
         'section'     => 'kanox_footer_section',
 
@@ -261,10 +261,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget toggle field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_footer_widget_toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Footer widget show/hide', 'kanox' ),
         'description' => esc_html__( 'Toggle to display footer widgets.', 'kanox' ),
         'section'     => 'kanox_footer_section',
@@ -273,10 +273,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer Copyright section
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_footer_copyright_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Footer Copyright Section', 'kanox' ),
         'section'     => 'kanox_footer_section',
         'default'     => true,
@@ -288,10 +288,10 @@ Epsilon_Customizer::add_field(
 // Copy right text
 $url = 'https://colorlib.com/';
 $copyText = sprintf( __( 'Theme by %s colorlib %s Copyright &copy; %s  |  All rights reserved.', 'kanox' ), '<a target="_blank" href="' . esc_url( $url ) . '">', '</a>', date( 'Y' ) );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_footer_copyright_text',
     array(
-        'type'        => 'epsilon-text-editor',
+        'type'        => 'colorlib-text-editor',
         'label'       => esc_html__( 'Footer copyright text', 'kanox' ),
         'section'     => 'kanox_footer_section',
         'default'     => wp_kses_post( $copyText ),
@@ -299,10 +299,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_footer_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Background Color', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'kanox_footer_section',
@@ -311,10 +311,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget text color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_footer_widget_text_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Text Color', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'kanox_footer_section',
@@ -323,10 +323,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget title color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_footer_widget_title_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Widget Title Color', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'kanox_footer_section',
@@ -335,10 +335,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget anchor color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_footer_widget_anchor_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Color', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'kanox_footer_section',
@@ -347,10 +347,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget anchor hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'kanox_footer_widget_anchor_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Hover Color', 'kanox' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'kanox_footer_section',
