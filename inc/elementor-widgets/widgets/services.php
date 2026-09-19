@@ -81,7 +81,7 @@ class Kanox_Services extends Widget_Base {
                         'name'      => 'icon',
                         'label'     => __( 'Select Icon', 'kanox' ),
                         'type'      => Controls_Manager::ICON,
-                        'default'   => 'fa fa-mobile',
+                        'default'   => 'fa-solid fa-mobile',
                         'options'   => kanox_flaticon_list()
                     ],
                     [
